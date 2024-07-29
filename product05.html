@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黃金曼特寧咖啡豆 Golden Mandheling</title>
+  <!-- bootstrap cdn css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/product_list_styles.css">
+</head>
+<style>
+  i {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 80%;
+  }
+</style>
+
+<body>
+  <main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container my-2">
+        <a class="navbar-brand" href="./index.html"><img src="./imgs/main-logo.png" alt="" style="width: 200px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./news.html">新訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./product-list.html">周邊商品</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                動物探索
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">草食</a></li>
+                <li><a class="dropdown-item" href="#">肉食</a></li>
+                <li><a class="dropdown-item" href="#">雜食</a></li>
+                <li><a class="dropdown-item" href="#">禽鳥</a></li>
+                <li><a class="dropdown-item" href="#">靈長類</a></li>
+                <li><a class="dropdown-item" href="#">兩棲爬蟲</a></li>
+              </ul>
+            </li>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./faq.html">常見問題</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">聯絡我們</a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a href="" class="mt-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <!-- cart  -->
+            <a href="" class="fs-2 position-relative me-5 mt-2 ms-2" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="bi bi-cart4 fs-2"></i>
+              <span class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+            <!-- cart  end-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5 pt-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-2">
+              <li class="breadcrumb-item active" aria-current="page"><a href="./index.html"
+                  class="text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="./product-list.html"
+                  class="text-decoration-none">周邊商品</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none">黃金曼特寧咖啡豆
+                  Golden Mandheling</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- bread end -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">登入系統</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="needs-validation" novalidate>
+              <h1 class="text-center">登入系統</h1>
+              <!-- Account Start -->
+              <div class="mb-3">
+                <label for="account" class="form-label">帳號:</label>
+                <input type="text" id="account" name="account" class="form-control" required>
+                <div class="invalid-feedback">
+                  此欄位為必填!
+                </div>
+              </div>
+              <!-- Account End -->
+
+              <!-- Password Start -->
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <div class="invalid-feedback">
+                  此欄位為必填!
+                </div>
+              </div>
+              <!-- Password End -->
+
+              <!-- Checkbox Start-->
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <!-- Checkbox End-->
+
+              <!-- Login Start -->
+              <div class="text-end">
+                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-secondary" type="reset" value="清除">
+              </div>
+
+              <!-- Login End -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product list -->
+
+    <div class="container">
+      <div class="row">
+        <h3 class="col-12 mb-5 mt-4">黃金曼特寧咖啡豆 Golden Mandheling</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mb-5 pb-5">
+        <div class="col-12 col-lg-4">
+          <img src="./imgs/product05.jpeg" alt="" class="w-100 mb-3">
+        </div>
+
+        <div class="col-12 col-lg-8 ps-0 position-relative top-0">
+          <ul>
+            <li class="mb-2">濃醇蜂蜜香、強勁草本氣味、厚實滑順、黑巧克力苦甜</li>
+            <li class="mb-2">產地：印尼</li>
+            <li class="mb-2">主要處理法：水洗</li>
+            <li class="mb-2">產區位於TOBA湖西北區的Lintong，海拔1050公尺到1200公尺</li>
+            <li class="mb-2 mb-5">純手工採收、當地獨創自然蔭乾法，集優雅的清爽與強勁於一身</li>
+          </ul>
+          <div class="position-position bottom-0 mb-4">
+            <div class="mt-2 pt-2 mt-lg-5 pt-lg-5">
+              <span class="mt-5 ps-3">規格</span>
+              <span class="ps-3"><a href=""
+                  class="m-3 text-decoration-none border border-warning p-2 text-warning ">227g</a>
+              </span>
+            </div>
+
+          </div>
+
+          <div class="position-relative top-0 bottom-0 mb-4">
+            <span class="ps-3 fs-5">優惠320</span>
+            <span class="text-decoration-line-through text-black-50 ms-3 fs-6">320</span>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+              <select id="quantitySelect" class="form-select" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+              <button class="border border-warning text-decoration-none w-100 h-100 bg-white">
+                <p class="my-auto text-warning">加到購物車</p>
+              </button>
+            </div>
+            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+              <button class="border border-warning text-decoration-none w-100 h-100 bg-warning">
+                <p class="my-auto text-white">直接購買</p>
+              </button>
+            </div>
+            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+              <button class="border border-warning text-decoration-none w-100 h-100 bg-warning">
+                <p class="my-auto text-white">加入追蹤</p>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- 注意事項  Start-->
+      <div class="row">
+        <div>
+          <ul class="ps-0">
+            <li class="list-unstyled fw-bold">成分：100% 阿拉比卡咖啡豆</li>
+            <li class="list-unstyled fw-bold">商品規格：227g±2g</li>
+            <li class="list-unstyled fw-bold">製造地：台灣</li>
+            <li class="list-unstyled fw-bold">保存期限：18個月，製造日期如包裝標示</li>
+            <li class="list-unstyled fw-bold">儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢</li>
+            <li class="list-unstyled fw-bold">咖啡因含量：41.1mg / 包（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量</li>
+            <li class="list-unstyled fw-bold">
+              接獲訂單後為您新鮮現烘，預定寄出日為5~7工作天。每週四固定烘豆，若您於週二前(含)訂購，可於當週五安排出貨(遇國定假日則順延出貨)，請買家耐心等候。</li>
+            <li class="list-unstyled fw-bold">退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理。鑑賞期內請保持原商品完整性，商品一經使用恕不接受退貨
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 注意事項  End-->
+
+      <!-- 好咖推薦title Start-->
+      <div class="row">
+        <h4 class="col-12 mb-5 mt-4">好咖推薦</h4>
+      </div>
+      <!-- 好咖推薦title End-->
+
+    </div>
+    <!-- 好咖推薦清單 -->
+    <!-- Carousel Start -->
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            </div>
+            <!-- carousel inner -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product01.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">鎖香煎焙咖啡豆-深焙 黃金曼巴咖啡豆Golden Mandheling & Brazil Blend</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product02.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">鎖香煎焙咖啡豆-淺焙 柑橘花蜜 Citrus Nectar</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product03.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product04.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">鎖香煎焙咖啡豆-深焙 醇厚焦糖 Creamy Caramel</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product05.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">黃金曼特寧咖啡豆 Golden Mandheling</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product06.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">曼巴咖啡豆 Mandheling & Brazil Blend</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product07.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">濾掛式咖啡-A級曼特寧(8包/盒)</p>
+                  </div>
+                  <div class="carousel-card w-25 p-3">
+                    <img src="./imgs/product08.jpeg" class="d-block w-100" alt="...">
+                    <p class="product-name mt-1 fw-bold">濾掛式咖啡-義式(8包/盒) House Blend</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- button prev start -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- button prev end -->
+            <!-- button next start -->
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- button next end -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel End -->
+
+
+  </main>
+
+  <footer class="bg-light">
+    <div class="container-xl p-0">
+      <div class="w-100 p-5">
+        <div class="footer-width">
+          <div class="row">
+            <div class="col-12 col-lg-3 mx-auto"> <!-- bg-primary -->
+              <img src="imgs/cama_footer_logo.png" alt="" width="200px">
+            </div>
+            <div class="col-12 col-lg-9 my-auto"> <!-- bg-warning -->
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <p class="my-2">咖碼股份有限公司 統一編號:53353122</p>
+                  <p class="my-2"><i class="bi bi-geo-alt-fill me-2 fs-5"></i>台北市大安區安和路一段 27 號 18樓</p>
+                  <p class="my-2"><i class="bi bi-telephone-fill me-2 fs-5"></i>(02) 2775 - 3385</p>
+                  <p class="my-2"><i class="bi bi-envelope me-2 fs-5"></i>service@camacafe.com</p>
+                </div>
+                <div class="col-4 col-md-2 my-2">
+                  <a href="https://www.camacafe.com/Terms" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">隱私權政策</p>
+                  </a>
+                  <a href="faq.html" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">常見問題</p>
+                  </a>
+                  <a href="https://www.camacafe.com/Careers" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">加入我們</p>
+                  </a>
+                </div>
+                <div class="col-4 col-md-2 my-2">
+                  <a href="https://www.camacafe.com/Franchise/9" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">加盟資訊</p>
+                  </a>
+                  <a href="https://www.camacafe.com/Purchase/1" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">企業採購</p>
+                  </a>
+                  <a href="https://www.camacafe.com/Store" class="text-decoration-none text-black">
+                    <p class="text-decoration-none text-black list-unstyled text-center">門市查詢</p>
+                  </a>
+                </div>
+                <div class="col-4 col-md-2 my-2">
+                  <a href="https://www.camacafe.com/CoffeeTalk/" class="text-decoration-none text-black text-center">
+                    <p>談咖啡</p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- offcanvas start -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+        images,
+        lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end -->
+
+
+  <!--  -->
+  <a href="javascript:;"
+    class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a>
+  <a href="#"
+    class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none d-flex flex-column align-items-center"><i
+      class="bi bi-arrow-up fs-5 "></i></a>
+
+
+  <!-- bootsrtap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="./js/validation.js"></script>
+</body>
+
+</html>

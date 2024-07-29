@@ -1,0 +1,73 @@
+/*!
+ * Bootstrap v5.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "../bootstrap-5/scss/functions";
+@import "variables";
+@import "../bootstrap-5/scss/mixins";
+@import "../bootstrap-5/scss/utilities";
+
+// Layout & components
+@import "../bootstrap-5/scss/root";
+@import "../bootstrap-5/scss/reboot";
+@import "../bootstrap-5/scss/type";
+@import "../bootstrap-5/scss/images";
+@import "../bootstrap-5/scss/containers";
+@import "../bootstrap-5/scss/grid";
+@import "../bootstrap-5/scss/tables";
+@import "../bootstrap-5/scss/forms";
+@import "../bootstrap-5/scss/buttons";
+@import "../bootstrap-5/scss/transitions";
+@import "../bootstrap-5/scss/dropdown";
+@import "../bootstrap-5/scss/button-group";
+@import "../bootstrap-5/scss/nav";
+@import "../bootstrap-5/scss/navbar";
+@import "../bootstrap-5/scss/card";
+@import "../bootstrap-5/scss/accordion";
+@import "../bootstrap-5/scss/breadcrumb";
+@import "../bootstrap-5/scss/pagination";
+@import "../bootstrap-5/scss/badge";
+@import "../bootstrap-5/scss/alert";
+@import "../bootstrap-5/scss/progress";
+@import "../bootstrap-5/scss/list-group";
+@import "../bootstrap-5/scss/close";
+@import "../bootstrap-5/scss/toasts";
+@import "../bootstrap-5/scss/modal";
+@import "../bootstrap-5/scss/tooltip";
+@import "../bootstrap-5/scss/popover";
+@import "../bootstrap-5/scss/carousel";
+@import "../bootstrap-5/scss/spinners";
+@import "../bootstrap-5/scss/offcanvas";
+@import "../bootstrap-5/scss/placeholders";
+
+// Helpers
+@import "../bootstrap-5/scss/helpers";
+
+// Utilities
+@import "../bootstrap-5/scss/utilities/api";
+// scss-docs-end import-stack
+
+.youtube {
+    color: red;
+}
+
+.facebook {
+    color: #3b5998
+}
+
+.line {
+    color: rgb(70, 222, 100);
+}
+
+.messenger {
+    color: #006AFF;
+}
+
+.twitter {
+    color: #006AFF;
+}

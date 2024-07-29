@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.product-name {
+  /* 固定高度 */
+  height: 3em;
+  /* 限制最多顯示兩行文字 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* 超過部分使用省略處理 */
+  text-overflow: ellipsis;
+}
+
+/* 人頭icon */
+.bi-person-circle {
+  font-size: 2em;
+}
+
+.footer-width {
+  width: 80%;
+  margin: auto;
+}

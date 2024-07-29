@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常見問題</title>
+  <!-- bootstrap cdn css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+  i {
+    font-size: 2em;
+  }
+</style>
+
+<body>
+  <main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container my-2">
+        <a class="navbar-brand" href="./index.html"><img src="imgs/cama_logo.png" alt="" style="width: 200px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item fs-4">
+              <a class="nav-link" aria-current="page" href="./news.html">新訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="./product-list.html">周邊商品</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                動物探索
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">草食</a></li>
+                <li><a class="dropdown-item" href="#">肉食</a></li>
+                <li><a class="dropdown-item" href="#">雜食</a></li>
+                <li><a class="dropdown-item" href="#">禽鳥</a></li>
+                <li><a class="dropdown-item" href="#">靈長類</a></li>
+                <li><a class="dropdown-item" href="#">兩棲爬蟲</a></li>
+              </ul>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-4" href="./faq.html">常見問題</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="./contact.html">聯絡我們</a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a href="" class="mt-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <!-- cart  -->
+            <a href="" class="fs-2 position-relative me-5 mt-2 ms-2" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="bi bi-cart4 fs-2"></i>
+              <span class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+            <!-- cart  end-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- bread -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5 pt-5">
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-2">
+              <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="#">常見問題</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- bread end -->
+
+
+    <!-- section 1 start -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <h2 class="text-center mb-5">常見問題</h2>
+
+          <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">所有問題</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+          <!-- 手風琴 -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="accordion" id="accordionExample">
+                <!-- Q1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      請問導盲犬可進動物園嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      依身心障礙者權益保障法第60條之規定：「視覺功能障礙者由合格導盲犬陪同或導盲犬專業訓練人員於執行訓練時帶同導盲幼犬，得自由出入公共場所、公共建築物、營業場所、大眾運輸工具及及其他公共設施。」
+                    </div>
+                  </div>
+                </div>
+                <!-- Q2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      請問當天出園後可再度入園嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      可以的，您可至大門口驗票處請服務人員於您手上蓋章，當天再度入園時顯示給服務人員看即可。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      請問動物園兒童牧場餵食有開放團體預約嗎？餵食時間為何？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      目前兒童牧場並無開放團體預約服務，採現場排隊發送牧草至發送完畢，餵食時間為上午10：00-11：00，下午14：00-15：00。
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      請問動物園全面禁煙嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      本園區全面禁煙。配合菸害防治法，違者最高可罰新臺幣一萬元。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q4 end -->
+
+                <!-- Q5 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      請問動物園內有寄物服務嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      大門入口處及親水廣場旁提供置物櫃，如有大型行李無法放置於寄物櫃中，可將行李寄放於遊客服務中心內。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q5 end -->
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Accordion Item #4
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!-- Q4 end -->
+
+                <!-- Q5 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Accordion Item #5
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!-- Q5 end -->
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Accordion Item #4
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!-- Q4 end -->
+
+                <!-- Q5 start-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Accordion Item #5
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse plugin adds the appropriate classes that we use
+                      to
+                      style each element. These classes control the overall appearance, as well as
+                      the
+                      showing and hiding via CSS transitions. You can modify any of this with
+                      custom
+                      CSS or overriding our default variables. It's also worth noting that just
+                      about
+                      any HTML can go within the <code>.accordion-body</code>, though the
+                      transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!-- Q5 end -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 手風琴 -->
+
+        </div>
+      </div>
+    </div>
+    <!-- section 1 end -->
+    <!-- button -->
+    <a href="javascript:;"
+      class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a>
+    <a href="#"
+      class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none d-flex flex-column align-items-center rounded-pill"><i
+        class="bi bi-arrow-up fs-5 "></i>top</a>
+    <!-- button end-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">登入系統</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="needs-validation" novalidate>
+              <h1 class="text-center">登入系統</h1>
+              <!-- Account Start -->
+              <div class="mb-3">
+                <label for="account" class="form-label">帳號:</label>
+                <input type="text" id="account" name="account" class="form-control" required>
+                <div class="invalid-feedback">
+                  此欄位為必填!
+                </div>
+              </div>
+              <!-- Account End -->
+
+              <!-- Password Start -->
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <div class="invalid-feedback">
+                  此欄位為必填!
+                </div>
+              </div>
+              <!-- Password End -->
+
+              <!-- Checkbox Start-->
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <!-- Checkbox End-->
+
+              <!-- Login Start -->
+              <div class="text-end">
+                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-secondary" type="reset" value="清除">
+              </div>
+
+              <!-- Login End -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- offcanvas start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+          images,
+          lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas end -->
+  </main>
+
+  <!-- bootsrtap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="./js/validation.js"></script>
+</body>
+
+</html>

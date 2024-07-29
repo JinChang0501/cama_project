@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <!-- bootstrap cdn css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<style>
+    i {
+        font-size: 2em;
+    }
+
+    .bi-geo-alt-fill,
+    .bi-telephone-fill,
+    .bi-envelope {
+        color: #f1a100;
+
+    }
+
+    .btnsubmit {
+        background-color: #f1a100;
+        border-color: #f1a100;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+</style>
+
+<body>
+    <main class="flex-shrink-0">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container my-2">
+                <a class="navbar-brand" href="./index.html"><img src="imgs/cama_logo.png" alt=""
+                        style="width: 200px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" aria-current="page" href="./news.html">新訊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="./product-list.html">周邊商品</a>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown fs-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                動物探索
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">草食</a></li>
+                                <li><a class="dropdown-item" href="#">肉食</a></li>
+                                <li><a class="dropdown-item" href="#">雜食</a></li>
+                                <li><a class="dropdown-item" href="#">禽鳥</a></li>
+                                <li><a class="dropdown-item" href="#">靈長類</a></li>
+                                <li><a class="dropdown-item" href="#">兩棲爬蟲</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="./faq.html">常見問題</a>
+                        </li>
+                        <li class="nav-item fs-4">
+                            <a class="nav-link active" href="./contact.html">聯絡我們</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a href="" class="mt-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <!-- cart  -->
+                        <a href="" class="fs-2 position-relative me-5 mt-2 ms-2" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="bi bi-cart4 fs-2"></i>
+                            <span
+                                class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                        <!-- cart  end-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+        <!-- Bread Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5 pt-5">
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-2">
+                            <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">聯絡我們</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Bread End -->
+        <!-- Title Start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h2 class="mb-3">聯絡我們</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Title End -->
+        <!-- .container>.row>.col-12.col-md-6>label+input*8 -->
+        <div class="container">
+            <div class="row mx-5">
+                <form class="ms-5 mt-4">
+                    <div class="row mb-4">
+                        <label for="" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">聯絡目的</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="">客服專區</option>
+                                <option value="1">加盟專區</option>
+                                <option value="2">海外代理</option>
+                                <option value="3">異業合作</option>
+                                <option value="4">企業採購</option>
+                                <option value="5">聯名商品</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row mb-4">
+                        <label for="name" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">姓名</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="請輸入姓名">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="row mb-4">
+                        <label for="mobile" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">連絡電話</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="請輸入連絡電話"
+                                pattern="[0]{1}[9]{1}[0-9]{8}">
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="row mb-4">
+                        <label for="email" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">Email</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <input type="email" class="form-control" id="email" placeholder="請輸入Email">
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="row mb-4">
+                        <label for="store" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">消費門市</label>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <select class="form-select" aria-label="Default select example" name="store" id="store">
+                                <option selected>消費門市</option>
+                                <option value="1">台北和平店</option>
+                                <option value="2">竹東長春店</option>
+                                <option value="3">青埔新生店</option>
+                                <option value="4">小港漢民店</option>
+                                <option value="5">高雄五甲店</option>
+                                <option value="6">台東鐵花村</option>
+                                <option value="7">忠孝新生店</option>
+                                <option value="8">臺北南陽店</option>
+                                <option value="9">學成北大店</option>
+                                <option value="10">新光A8店B2</option>
+                                <option value="11">八德介壽店</option>
+                                <option value="12">中壢建工店</option>
+                                <option value="13">台北承德店</option>
+                                <option value="14">大直植福店</option>
+                                <option value="15">台北行天宮</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="row mb-4">
+                        <label for="time" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">消費時間</label>
+                        <div class="col-12 col-md-8">
+                            <input type="email" class="form-control" id="time" name="time" placeholder="請輸入消費時間">
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="row mb-4">
+                        <label for="title" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">主旨</label>
+                        <div class="col-12 col-md-8">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="請輸入主旨">
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="row mb-4">
+                        <label for="" class="form-label col-12 col-md-2 mt-0 mb-3 mb-md-2">內容</label>
+                        <div class="col-12 col-md-8">
+                            <textarea name="content" id="content" rows="10" style="resize: none;"
+                                class="col-12 col-md-12 form-control" placeholder="請輸入內容"></textarea>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="row mb-4">
+                        <label for="code" class="form-label col-12 col-md-2 my-auto mb-3 mb-md-2">驗證碼</label>
+                        <div class="col-4 col-lg-2">
+                            <input type="text" class="form-control" id="code" name="code" maxlength="4"
+                                placeholder="請輸入驗證碼">
+                        </div>
+                    </div>
+            </div>
+            <div class="col-12 mt-5 text-end mb-5">
+                <button class="btn btn-primary px-5 btnsubmit" type="submit">送出訊息</button>
+            </div>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="row mb-5 mx-auto">
+                        <div class="col-12 col-xl-4 text-center my-auto">
+                            <div class="my-auto">
+                                <i class="bi bi-geo-alt-fill me-2 fs-5"></i>台北市大安區安和路一段 27 號 18
+                                樓
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4 text-center my-auto">
+                            <div class="my-auto"><i class="bi bi-telephone-fill me-2 fs-5"></i>(02) 2775 - 3385
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4 text-center my-auto">
+                            <div class="my-auto"><i class="bi bi-envelope me-2 fs-5"></i>service@camacafe.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- button -->
+        <a href="#"
+            class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none d-flex flex-column align-items-center rounded-pill">
+            <i class="bi bi-arrow-up fs-5 "></i>top
+        </a>
+        <!-- button end-->
+        <!-- Modal Start 會員登入系統彈出視窗-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">登入系統</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="needs-validation" novalidate>
+                            <h1 class="text-center">登入系統</h1>
+                            <!-- Account Start -->
+                            <div class="mb-3">
+                                <label for="account" class="form-label">帳號:</label>
+                                <input type="text" id="account" name="account" class="form-control">
+                                <div class="invalid-feedback">
+                                    此欄位為必填!
+                                </div>
+                            </div>
+                            <!-- Account End -->
+
+                            <!-- Password Start -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">密碼:</label>
+                                <input type="password" id="password" name="password" class="form-control">
+                                <div class="invalid-feedback">
+                                    此欄位為必填!
+                                </div>
+                            </div>
+                            <!-- Password End -->
+
+                            <!-- Checkbox Start-->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <!-- Checkbox End-->
+
+                            <!-- Login Start -->
+                            <div class="text-end">
+                                <input class="btn btn-primary" type="submit" value="登入">
+                                <input class="btn btn-secondary" type="reset" value="清除">
+                            </div>
+
+                            <!-- Login End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <!-- offcanvas start -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images,
+                    lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- offcanvas end -->
+    </main>
+
+    <!-- bootsrtap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- 驗證 -->
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+    i {
+        font-size: 2em;
+    }
+</style>
+
+<body>
+    <!-- Emmet .container > .row > .col-3 *4 > p{item$} -->
+    <!-- section 1 start -->
+    <!-- .container>.row>.col-3*4>.bg-primary>p{item$} -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container my-2">
+            <a class="navbar-brand" href="#"><img src="./imgs/main-logo.png" alt="" style="width: 200px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">新訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">拜訪園區</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            動物探索
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">草食</a></li>
+                            <li><a class="dropdown-item" href="#">肉食</a></li>
+                            <li><a class="dropdown-item" href="#">雜食</a></li>
+                            <li><a class="dropdown-item" href="#">禽鳥</a></li>
+                            <li><a class="dropdown-item" href="#">靈長類</a></li>
+                            <li><a class="dropdown-item" href="#">兩棲爬蟲</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product-list.html">周邊商品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯絡我們</a>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <a href="" class="mt-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <!-- cart  -->
+                    <a href="" class="fs-2 position-relative me-5 mt-2 ms-2" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="bi bi-cart4 fs-2"></i>
+                        <span
+                            class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                    <!-- cart  end-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入系統</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="needs-validation" novalidate>
+                        <h1 class="text-center">登入系統</h1>
+                        <!-- Account Start -->
+                        <div class="mb-3">
+                            <label for="account" class="form-label">帳號:</label>
+                            <input type="text" id="account" name="account" class="form-control" required>
+                            <div class="invalid-feedback">
+                                此欄位為必填!
+                            </div>
+                        </div>
+                        <!-- Account End -->
+
+                        <!-- Password Start -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                            <div class="invalid-feedback">
+                                此欄位為必填!
+                            </div>
+                        </div>
+                        <!-- Password End -->
+
+                        <!-- Checkbox Start-->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <!-- Checkbox End-->
+
+                        <!-- Login Start -->
+                        <div class="text-end">
+                            <input class="btn btn-primary" type="submit" value="登入">
+                            <input class="btn btn-secondary" type="reset" value="清除">
+                        </div>
+
+                        <!-- Login End -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!-- offcanvas start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- section 1 start -->
+    <div class="bg-secondary py-5 mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5 mb-5">
+                    <h2 class="text-center">介紹</h2>
+                </div>
+
+                <div class="col-3">
+                    <div class="bg-light rounded p-2">
+                        <img class="w-100" src="./imgs/deco-1-1.png" alt="">
+                        <p>item1</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-light rounded p-2">
+                        <img class="w-100" src="./imgs/deco-1-1.png" alt="">
+                        <p>item2</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-light rounded p-2">
+                        <img class="w-100" src="./imgs/deco-1-1.png" alt="">
+                        <p>item3</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="bg-light rounded p-2">
+                        <img class="w-100" src="./imgs/deco-1-1.png" alt="">
+                        <p>item4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 1 end -->
+
+    <!-- section 2 start -->
+    <div class="bg-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2 class="text-center">影片介紹</h2>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-primary">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5blZVoSkeNY?si=3pEErnd1yGVxM_Do"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-center">影片1</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bg-primary">
+                        <div class="ratio ratio-16x9"><iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5cKLxywMa2A?si=H_SM9BZ4AXI4ddcr"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+                        <p class="text-center">影片2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 2 end -->
+
+    <!--  -->
+    <!-- .container>.row>.col-12.text-center{動物明星}.mb-5+.col-12.col-md-6.col-xl-3*8>div>img -->
+
+    <!-- .container>.row>.col-12.text-center{動物明星}.mb-5+.col-12.col-md-6.col-xl-3*8>div.position-relative>img-100+div.bg-primary.text-white.position-absolute{icon}^p -->
+
+    <!-- .container>.row>.col-12.text-center{動物明星}.mb-5+.col-12.col-md-6.col-xl-3*8>div.position-relative>img.w-100[src="./imgs/animal-$$.webp"]+div.bg-primary.text-white.position-absolute.end-0.top-0.p-2{icon}^p{動物名稱}.text-center -->
+
+    <!-- section 3 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5 mt-5">
+                <h2 class="text-center">動物明星</h2>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-01.webp" alt="" class="w-100">
+                    <div class="text-white position-absolute start-0 top-0 p-2"><i
+                            class="bi bi-send fs-5 text-dark bg-light p-2 rounded-pill border border-light">靈長類</i>
+                    </div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-02.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-03.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-04.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-05.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-06.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-07.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="position-relative">
+                    <img src="./imgs/animal-08.webp" alt="" class="w-100">
+                    <div class="bg-primary text-white position-absolute start-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute start-0 bottom-0 p-2">icon</div>
+                    <div class="bg-primary text-white position-absolute end-0 top-0 p-2">icon</div>
+                </div>
+                <p class="text-center">動物名稱</p>
+            </div>
+        </div>
+    </div>
+    <!-- section 3 end -->
+
+    <!-- section 4 start -->
+    <div class="bg-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">遊園須知</h2>
+                </div>
+                <div class="col-6 col-md-2"><a href=""><img class="w-100" src="./imgs/animal-01.png" alt=""></a>
+                </div>
+                <div class="col-6 col-md-2 d-block"><a href=""><img class="w-100" src="./imgs/animal-01.png" alt=""></a>
+                </div>
+                <div class="col-6 col-md-2"><a href=""><img class="w-100" src="./imgs/animal-01.png" alt=""></a>
+                </div>
+                <div class="col-6 col-md-2"><a href=""><img class="w-100" src="./imgs/animal-01.png" alt=""></a>
+                </div>
+                <div class="col-6 col-md-2"><a href=""><img class="w-100" src="./imgs/animal-01.png" alt=""></a>
+                </div>
+                <div class="col-6 col-md-2"><a href=""><img cl class="w-100" ass src="./imgs/animal-01.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 4 end -->
+    <a href="javascript:;"
+        class="position-fixed end-0 bottom-50 bg-secondary text-white p-4 text-decoration-none rounded-start">線上購票</a>
+    <a href="#"
+        class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none d-flex flex-column align-items-center rounded-pill"><i
+            class="bi bi-arrow-up fs-5 "></i>top</a>
+
+
+    <!-- bootsrtap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>
